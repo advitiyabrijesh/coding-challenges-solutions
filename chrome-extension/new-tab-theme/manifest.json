@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Coding Challenges Extension",
+    "version": "1.0",
+    "description": "Sets the background color of the new tab to Coding Challenges Blue.",
+    "permissions": ["storage", "activeTab"],
+    "action": {
+      "default_icon": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+      },
+      "default_title": "Coding Challenges>_",
+      "default_popup": "popup.html"
+    },
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    },
+    "icons": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    },
+    "background": {
+      "service_worker": "scripts/background.js"
+    }
+  }
+  
